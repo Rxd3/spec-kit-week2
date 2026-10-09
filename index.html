@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote of the Day</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <p class="eyebrow">A moment of perspective</p>
+        <h1>Quote of the Day</h1>
+        <p class="intro">A few words can make room for a new thought.</p>
+      </header>
+      <section class="quote-card" aria-label="Your quote">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote aria-live="polite" aria-atomic="true">
+          <p id="quote-text">Loading your quote…</p>
+        </blockquote>
+        <div class="actions">
+          <button id="new-quote" class="primary-button" type="button" disabled>New quote</button>
+          <button id="favorite-toggle" type="button" aria-pressed="false" disabled>Favorite</button>
+        </div>
+        <p id="status-message" class="status" role="status" aria-live="polite"></p>
+      </section>
+      <p class="page-note">Keep the words that stay with you.</p>
+      <noscript>This page needs JavaScript to display quotes and save favorites.</noscript>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
